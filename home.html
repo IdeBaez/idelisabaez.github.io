@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Personal Portfolio </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <header>
+    <!-- DESKTOP NAVBAR -->
+    <nav id="desktop-navbar">
+      <div id="header-logo">
+        <div class="profile-image-container">
+          <img src="Profile-picture/Idelisa-profile.jpg" alt="Idelisa-profile-picture">
+        </div>
+         <p>Idelisa Baez</p>
+       </div>
+      <ul id="header-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="resume_page.html" target="blank">Resume <img src="icons/external_link.svg" alt="resume-icon"></a></li>
+        <!-- <li><a href="#">About me</a></li>
+        <li><a href="www.freecodecamp.org" target="_blank" id="profile-link">Contacts</a></li> -->
+      </ul>
+    </nav>
+    <!-- DESKTOP NAVBAR -->
+    <!--MOBILE NAV MENU-->
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Top Navigation Menu -->
+    <div id="mobile-navbar">
+    <!-- <div id="header-logo" class="active">
+      <div class="profile-image-container">
+        <img src="Profile-picture/Idelisa-profile.jpg" alt="Idelisa-profile-picture">
+      </div> -->
+       <p class="active">Idelisa Baez</p>
+     <!-- </div> -->
+    <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="#news">Home</a>
+        <a href="#contact">Resume</a>
+      </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!--MOBILE NAV MENU-->
+  </header>
+  <body>
+    <section id="welcome-section">
+      <h1>I'm an experienced Product Designer who love creating intuitive digital experiences</h1>
+      <p> With over 3 years of experience, and a strong focus on results and innovation, I combine my passion for marketing, web development, storytelling, and multimedia tools to leverage digital products with users at the heart.</p>
+
+       <div class="chips">
+        <div class="chips-line-one">
+          <div class="chip-one pink">Wireframing</div>
+          <div class="chip-two pink">Prototyping</div>
+          <div class="chip-three pink">Agile methologies</div>
+          <div class="chip-four pink">Figma</div>
+          <div class="chip-five pink">User research</div>
+          <div class="chip-six pink">Market research</div>
+          <div class="chip-seven pink">Usability evaluation</div>
+        </div>
+        <div class="chips-line-two">
+          <div class="chip-one green">Cross-team collaboration</div>
+          <div class="chip-two green">User interface</div>
+          <div class="chip-three green">Design system</div>
+          <div class="chip-four green">HTML & CSS</div>
+          <div class="chip-five green">Information Architecture</div>
+          <div class="chip-six green">Personas</div>
+          <div class="chip-seven green">Design system</div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h2 class="projects-header">Projects</h2>
+      <div class="project-tile">
+        <a href="project1.html">
+          <div class="project-one">
+          <div class="project-thumbnail">
+            <img src="Projects-thumbnails/socialListening.png" width="300px"/>
+          </div>
+          <div class="project-info">
+            <p class="eyebrow-text">Web · Mobile</p>
+            <h3>Social Listening</h3>
+            <p>With over 3 years of experience, specializes in crafting intuitive and visually.</p>
+            <a href="#" id="project-link">View project</a>
+          </div>
+
+        </div></a>
+        <a href="project2.html">
+          <div class="project-two">
+          <div class="project-thumbnail">
+        <img src="Projects-thumbnails/social-email.png" width="300px"/>
+        </div>
+          <div class="project-info">
+            <p class="eyebrow-text">Web · Mobile</p>
+            <h3>Summarize & Share</h3>
+            <p>With over 3 years of experience, specializes in crafting intuitive and visually.</p>
+            <a href="#" id="project-link">View project</a>
+          </div>
+        </div>
+      </a>
+      </div>
+
+    </section>
+
+    <section id="projects-emptystate">
+      <div class="container">
+        <img src="icons/more_projects.svg" alt="projects-icons">
+        <h5>Stay tune!</h5>
+        <p>More projects to come</p>
+      </div>
+    </section>
+
+    
+    <!-- <section id="highlight-carousel">
+      <h2>UX/UI Highlights</h2>
+      <img src="icons/ArrowLeftCircleFill.svg" id="carousel-icon-left">
+      <img src="icons/ArrowRightCircleFill.svg" id="carousel-icon-right">
+      <div id="slide-1">
+        <div class="text-block-1">
+          <h3>Headline</h3>
+          <p>With over 3 years of experience, specializes in crafting intuitive and visually appealing user interfaces that enhance user satisfaction and drive business results.</p>
+        </div>
+        <div class="example-container">
+          <div class="left">
+            <img src="Projects-thumbnails/img_placeholder.svg" class="carousel-img" alt="carousel-image-one">
+            <h4>Subheader</h4>
+            <p class="image-description">With over 3 years of experience, specializes in crafting intuitive and visually appealing user interfaces that enhance user satisfaction and drive business results.</p>
+          </div>
+          <div class="right">
+            <img src="Projects-thumbnails/img_placeholder.svg" class="carousel-img" alt="carousel-image-two">
+            <h4>Subheader</h4>
+            <p class="image-description">With over 3 years of experience, specializes in crafting intuitive and visually appealing user interfaces that enhance user satisfaction and drive business results.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  <script src="javascript.js"></script> -->
+
+  </body>
+  <footer id="footer">
+    <div class="upper-container">
+      <div class="column1">
+        <div class="content">
+          <img src="icons/LinkedIn.png" alt="LinkedIn logo">
+          <p><span class="bold">LinkedIn</span>/idelisabaez</p>
+      </div>
+      </div>
+      <div class="column2">
+        <div class="content">
+          <img src="icons/Github.png" alt="Github logo">
+          <p><span class="bold">GitHub</span>/idelisabaez</p>
+        </div>
+      </div>
+      <div class="column3">
+        <div class="content">
+          <img src="icons/Email.png" alt="Email logo">
+          <p><span class="bold"></span>idelisa.ba@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="lower-container">
+      <div>
+        <p class="inblock">IDELISA BAEZ</p>
+      </div>
+      <!-- <div>
+      <ul class="quick-links">
+        <li>Projects</li>
+        <li>About me</li>
+        <li>Contacts</li>
+      </ul> -->
+    </div>
+    </div>
+
+  </footer>
+  
+</html>
+
