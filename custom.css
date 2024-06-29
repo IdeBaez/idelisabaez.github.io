@@ -11,18 +11,9 @@ button.btn.btn-primary{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 0px;
-    width: calc(28% + (var(--inner-carousel-width)));
-    border: 1px solid green; */
     margin: 0 auto;
  }
 
-
-
-/* #carouselExampleIndicators .carousel-inner{ 
-    display:flex;
-    min-width: var(--inner-carousel-width);
-} */
 
 .carousel-control-prev, .carousel-control-next{
     background-color: #0699A6;
@@ -31,13 +22,11 @@ button.btn.btn-primary{
     border-radius: 100%;
     border: 1px solid red;
     margin: auto 0;
-
 }
 
 
 #carouselExampleIndicators .carousel-indicators{
     border: 1px solid green;
-    /* background-color: #700f0d; */
 }
 
 .carousel-indicators .indicator{
@@ -88,26 +77,11 @@ button.btn.btn-primary{
     margin: auto 15px;
  }
 
-/* .carousel-item{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 40px;
-    padding: 41px 40px;
-    border: 1px solid black;
-    min-height: 600px;
-    max-width: 1060px;
-    width: fit-content;
-    margin: 0 auto;
-  } */
-
   .carousel-item .example-container{
     display: inline-flex;
     flex-flow: wrap row;
     justify-content: space-between;
     gap: 50px;
-
-
   }
 
   .left, .right{
