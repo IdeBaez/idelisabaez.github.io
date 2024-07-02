@@ -6,24 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
+  <body>
   <header>
-    <nav id="navbar">
-      <p id="header-logo">Idelisa Baez</p>
+    <nav id="desktop-navbar">
+      <a href="home.html"><div id="header-logo">
+        <div class="profile-image-container">
+          <img src="Profile-picture/Idelisa-profile.jpg" alt="Idelisa-profile-picture">
+        </div>
+         <p>Idelisa Baez</p>
+       </div>
+      </a>
       <ul id="header-menu">
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">About me</a></li>
-        <li><a href="www.freecodecamp.org" target="_blank" id="profile-link">Contacts</a></li>
+        <li><a href="resume_page.html" target="blank">Resume<img src="icons/arrow-top-right-on-square.svg" alt="resume-icon"></a></li>
       </ul>
     </nav>
   </header>
-  <body class="project-body">
+  <section id="project-body">
+    <div class="project-page-buttons">
+      <a class="back button" href="home.html"><img alt="icon-back" src="icons/chevron-left.svg"> Back </a>
+      <a class="next button" href="project2.html">Next project<img alt="icon-back" src="icons/chevron-right.svg"></a>
+    </div>
     <iframe id="project-1-embbed" class="project-embbed" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FDtebolD5Zxh38En9Jqyo4k%2FPortafolio%3Fnode-id%3D0-1%26t%3DTk3GdqRUWPR8KRgt-1" allowfullscreen></iframe>
-    
-    </body>
-    <footer id="footer">
-      <div class="upper-container">
+    <div class="project-preview">
+      <div class="column">
+        <div>
+          <p class="bold">Role</p>
+          <p>End-to-end designer.</p>
+        </div>
+        <div>
+          <p class="bold">Skills</p>
+          <p>Research, wire-framing, prototyping, user testing, design system.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div>
+          <p class="bold">Team</p>
+          <p>1 research designer , 1 content designer.</p>
+        </div>
+        <div>
+          <p class="bold">Stakeholders</p>
+          <p>1 product owner, 5 developers, 2 managers.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div>
+         <p class="bold">Product</p>
+          <p><a>Constant Contact - Social Media Marketing tool</a></p>
+          <div class="ctct-card">
+           <img src="icons/constant-contact.jpg" alt="constant-contact-logo"></img>
+            <p>USA based SaaS platform that simplify digital marketing for small businesses and nonprofits, offering powerful tools for email marketing, social media, and more.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+    <footer>
+      <ul id="footer-project">
+        <il><a href="https://www.linkedin.com/in/idelisabaez/" target="blank">LinkedIn</a></il>
+        <il><a href="https://github.com/IdeBaez" target="blank">Github</a></il>
+        <il><a href="#">Email</a></il>
+      </ul>
+    </footer>
+      <!-- <div class="upper-container">
         <div class="column1">
           <div class="content">
             <img src="icons/LinkedIn.png" alt="LinkedIn logo">
@@ -42,20 +90,14 @@
             <p><span class="bold"></span>idelisa.ba@gmail.com</p>
           </div>
         </div>
-      </div>
-      <div class="lower-container">
-        <div>
-          <p class="inblock">Ide porta</p>
-        </div>
-        <div>
+      </div> -->
+
+        <!-- <div>
         <ul class="quick-links">
           <li>Projects</li>
           <li>About me</li>
           <li>Contacts</li>
-        </ul>
-      </div>
-      </div>
-  
-    </footer>
-  
+        </ul> -->
+
+      </body>
 </html>
